@@ -1,0 +1,317 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied
+1grncz6,I don't like the future of DE,"Sup folks! Of course, opinions are always biased, but I feel like DE is moving towards SaaS encapsulating low-level work (specially ETLs) for 80% of companies (yes I made that up), but think about it: standardized formats are the norm now, so it's pretty easy to create a ""simple"" ETL, according to the dummies at C-level; so, imho ETL work will be delegated to analysts, or DEs will absorb the analyst work (won't happen honestly). What do you guys think?
+
+As a side note: Currently I'm tired of python + AWS + SQL, it's always ""create a py script, use Glue and move to Snowflake"". I don't want to be siloed into these shitty GUIs, what should I study to become a platform/SWE data-oriented engineer? I was thinking about Rust but what else? I just have 2 YOE so open to hear your thoughts + advice.
+
+
+Cheers!!",54,61,Resident-Middle-1086,2024-11-15 03:36:39,https://www.reddit.com/r/dataengineering/comments/1grncz6/i_dont_like_the_future_of_de/,0,False,False,False,False
+1grff61,Is this normal when beginning a career in DE?,"For context I’m an 8 year military veteran, was struggling to find a job outside of the military, and was able to get accepted into a veterans fellowship that focused on re-training vets into DA. Really the training was just the google course on DA. My BS is in the Management of Information Systems, so I already knew some SQL. 
+
+Anyways after 2 months, thankfully the company I was a fellow at offered me a position as a full time DE, with the expectation that I continue learning and improving.. 
+
+But here’s the rub. I feel so clueless and confused on a daily basis that it makes my head spin lol. I was given a loose outline of courses to take in udemy, and some practical things I should try week by week. But that’s about it. I don’t really have anyone else I work with to actively teach/mentor me, so my feedback loop is almost non existent. I get like one 15 minute call a day, with another engineer when they are free to ask questions and that’s about it. 
+
+Presently I’m trying to put together a DAG, and realizing that my Python skills are super basic. So understand and wrapping my head around this complex DAG without a better feedback loop is terrifying and I feel kinda on my own. 
+
+Is this normal to be kinda left to your own devices so early on? Even during the fellowship period I was kind of loosely given a few courses to do, and that was it? I’m obviously looking and finding my own answers as I go, but I can’t help but feel like I’m falling behind as I have to stop and lookup everything piecemeal. Or am I simply too dense? ",40,21,Nhein9101,2024-11-14 21:12:35,https://www.reddit.com/r/dataengineering/comments/1grff61/is_this_normal_when_beginning_a_career_in_de/,0,False,False,False,False
+1grfwyq,What is the future of data jobs: generalization or specialization?,"I have noticed that it is quite common, especially in smaller or new-to-technology companies, for data professionals to be responsible for the entire data lifecycle, from extracting/obtaining raw data to generating reports, dashboards or even building and deploying machine learning models in production.  
+  
+How many of you are in this position? What do you think about this? What is the future of data jobs: generalization or specialization? Is Full Stack Data Profissional a thing?",37,27,computersmakeart,2024-11-14 21:34:04,https://www.reddit.com/r/dataengineering/comments/1grfwyq/what_is_the_future_of_data_jobs_generalization_or/,0,False,False,False,False
+1grxi5r,What did you learn from this sub this year?,What did you learn from this sub this year off the top of your head. Thanks.,35,50,chatsgpt,2024-11-15 14:25:39,https://www.reddit.com/r/dataengineering/comments/1grxi5r/what_did_you_learn_from_this_sub_this_year/,0,False,False,False,False
+1grnifi,How much does company name brand have a positive/negative effect on career prospects?,"Curious to hear people's experiences on the job hunt. I've got a couple different offer options, 2 from more name brand (but not FAANG companies) and one from insurance side (actually more a negative brand). The offers are summed up like: 
+
+1. Name brand 1 tech stack: palantir (python/spark) more startup feel
+
+2. Name brand 2 tech stack: snowflake/snowpark heavy, but not core DE role & career change into junior SA
+
+3. Insurance brand 3 tech stack: AWS/spark/python. Older more ""dinosaur"" brand. 
+
+  
+This is just for illustration, as obviously each of these has it's plus pros and cons. I do feel like the tech stack is best in the last one, to be applicable to most roles afterwards. 
+
+However, what I'm more interested in is, what impact does name brand have? Is it better to join a ""name brand"" company, even if other parts of the role seem worse comparatively? Or is it better to join a lower tier company where it sounds like the job is more inline with interests? What has been your experience? ",17,8,ocean_800,2024-11-15 03:45:15,https://www.reddit.com/r/dataengineering/comments/1grnifi/how_much_does_company_name_brand_have_a/,0,False,False,False,False
+1grzyzc,"Shift to Data in Energy Sector, Possible?","Hi everyone, I (26M) am trying to rebuild my career from scratch. I have a Finance degree. However, I didn't use it when working. Currently, I'm transitioning to data. With the potential of data engineering, but I know that I have to get it from the very beginning by starting with analytics.
+
+When I was in university, I admired Green energy finance as I'm a more impact-based person. It has been lately that I knew that data is very big in this field and in the energy economy as a whole. So I thought of getting the energy domain as my specialized domain. I mean: Energy + Finance + Data, what else I can ask for?
+
+My question is this possible given my case? is there a room for newbies? Am I too late for this?",11,13,Leather_Nothing2444,2024-11-15 16:16:26,https://www.reddit.com/r/dataengineering/comments/1grzyzc/shift_to_data_in_energy_sector_possible/,1,False,False,False,False
+1grg4kt,Z-Order and Liquid Clustering in Databricks,"This year, Liquid Clustering in Databricks became generally available. I’ve read that it speeds up queries by 2 to 12 times, with files being optimized incrementally. It sounds really nice,  but because I have worked with data since the early version of SQL Server I was curious about what is happening under the hood.
+
+I found that Z-ordering uses a Z-order curve to organize data. The use of this curve helps improve query performance through data skipping. This means that some files can be skipped when we query data using a filter value, reducing the need to read them. Liquid Clustering uses a Hilbert curve, where points on the curve always have a distance of one but the Z-Order does not have this feature. This means for Z-Order, potentially some files will have a min/max range equal to the full range, and data skipping can’t skip these files.
+
+Additionally, Z-Order requires rewriting all files, whereas Liquid Clustering does this incrementally.
+
+Sources:
+
+[https://docs.google.com/document/d/1TYFxAUvhtYqQ6IHAZXjliVuitA5D1u793PMnzsH\_3vs/edit?tab=t.0](https://docs.google.com/document/d/1TYFxAUvhtYqQ6IHAZXjliVuitA5D1u793PMnzsH_3vs/edit?tab=t.0)
+
+[https://docs.google.com/document/d/1FWR3odjOw4v4-hjFy\_hVaNdxHVs4WuK1asfB6M6XEMw/edit?tab=t.0](https://docs.google.com/document/d/1FWR3odjOw4v4-hjFy_hVaNdxHVs4WuK1asfB6M6XEMw/edit?tab=t.0)
+
+[https://docs.delta.io/latest/optimizations-oss.html#z-ordering-multi-dimensional-clustering](https://docs.delta.io/latest/optimizations-oss.html#z-ordering-multi-dimensional-clustering)
+
+[https://www.databricks.com/blog/announcing-general-availability-liquid-clustering](https://www.databricks.com/blog/announcing-general-availability-liquid-clustering)
+
+[https://dennyglee.com/2024/01/29/optimize-by-clustering-not-partitioning-data-with-delta-lake/](https://dennyglee.com/2024/01/29/optimize-by-clustering-not-partitioning-data-with-delta-lake/)
+
+https://preview.redd.it/z7w5s36vsx0e1.png?width=719&format=png&auto=webp&s=fc5083ebf5b5f9b89287bdd9b2644fa028e603bf",8,5,4DataMK,2024-11-14 21:43:24,https://www.reddit.com/r/dataengineering/comments/1grg4kt/zorder_and_liquid_clustering_in_databricks/,0,False,True,False,False
+1gs08s2,Embedded BI is overrated for customer-facing analytics,"Hot take: embedded BI tools like Looker and Tableau are not the right choice for customer-facing analytics in most cases. I know this is a controversial opinion, but hear me out.
+
+I'm the founder of an analytics startup (quill.co) and I've seen the pros and cons of different approaches firsthand. For internal data science and analytics, BI tools are great. I see teams using Power BI, Tableau, Sigma, Hex, Jupyter, Streamlit, Metabase and more.
+
+But for exposing data and insights to your customers, you really want a tailored, seamless experience that matches your product's UI and UX. The most serious companies know this and invest in building customer-facing analytics in-house. It gives them complete flexibility and control.
+
+The exception is for highly technical products and users. For example, observability tools often embed Grafana since their users prefer its raw functionality. But in most other domains, embedded BI ends up being an awkward compromise when you can't fully build the analytics experience you want yourself.
+
+I'm obviously biased, but this is why I started Quill - to give companies the fast time-to-value of embedded BI combined with the customization and extensibility of building it themselves. We use a developer-oriented approach to empower data teams.
+
+What has your experience been with customer-facing analytics? Have embedded BI tools worked well for you or do you prefer building in-house? Let me know your thoughts!
+
+",8,7,rawman650,2024-11-15 16:28:16,https://www.reddit.com/r/dataengineering/comments/1gs08s2/embedded_bi_is_overrated_for_customerfacing/,0,False,False,False,False
+1gry5k4,Feedback Needed: Solution for parsing 100k XML Files in GCS to BigQuery Using PySpark,"Hi everyone,
+
+I’m working on a data pipeline that processes between 60k-100k XML files (\~100 GB) stored in a bucket in GCS. These files are partitioned into batches of 20k, with an average file size of 300 KB (largest being 10 MB). The goal is to transform the XML data into JSON and load it into BigQuery.
+
+Here’s the approach I’ve implemented using PySpark on Dataproc:
+
+* **Create a DataFrame:** I load the XML data into a PySpark DataFrame directly from GCS  
+
+`xml_df =SPARK_SESSION.read.format(""com.databricks.spark.xml"").options(rowTag=row_tag).load(batch)`
+
+* **Transform to JSON:** I use this transformation to convert the DataFrame into JSON.  
+
+`json_df = xml_df.select(to_json(struct([col for col in df.columns])).alias(""json_data""))`
+
+* **Add Metadata:** For each record, I add the file path and a timestamp.
+
+`json_df = json_df.withColumn(""input_path"", input_file_name())`  
+`json_df = json_df.withColumn(""ingestion_ts"", current_timestamp())`
+
+* **Write to BigQuery:** I load the resulting DataFrame into BigQuery.  
+
+`df.write.format(""bigquery"").option(""writeMethod"",""direct"").mode(""append"").save(FULL_TABLE_ID)`
+
+I want to ensure that this is an efficient and scalable solution. I’m looking for feedback on:
+
+* Whether this is the right approach for such a use case.
+* Suggestions for optimization, especially considering file sizes and batch processing, and spark config (# cores, executor/driver memory or any other important config I am missing).
+* Recommended repositories, books, or resources to improve this pipeline.
+
+The team primarily uses PySpark and Python, and we run pipelines on Google Dataproc. Any insights or recommendations would be greatly appreciated!
+
+Thanks in advance!",6,11,SirAlejo,2024-11-15 14:56:29,https://www.reddit.com/r/dataengineering/comments/1gry5k4/feedback_needed_solution_for_parsing_100k_xml/,0,False,True,False,False
+1grhe73,Data Lakehouses for non-Data Engineers?,"Hi, I'm applying for an entry-level data engineer role and need to do a presentation about how the handling of data has evolved and I want to touch on data lakehouses. I've been researching Data Warehouses and Data Lakes and feel like I have my head around them roughly, but Lakehouses are tripping me up a bit. Here's a basic idea of how I understand them:
+
+  
+**Data Warehouse**  
+\- Predefined schemas, great for structured data but don't really work for semi-structured or unstructured data  
+\- Ideal for business insights/reporting tools  
+\- Because of their nature, it's easy to keep track of data and ideal for data governance
+
+**Data Lakes**  
+\- Let's just chuck EVERYTHING WE FIND in here!  
+\- Ideal for unstructured data and semi-structured data  
+\- Because it doesn't support transactions, data can become corrupted, high data quality can be hard to maintain  
+\- The lack of a predefined scheme makes it difficult for business insights and reporting, so you end up building data warehouses on top for anything that needs it  
+\- Good for machine learning due to all the unstructured data  
+\- Because just so much is being thrown in and it's hard to keep track, not ideal for data governance
+
+**Data Lakehouse**  
+\- Essentially starts as a data lake, harvesting all raw data into it. The ""bronze"" layer, if going by medallion architecture.  
+\- Data is cleaned and ""validated"" and dumped in the ""silver"" layer  
+\- Data goes through final preparation to make it ready for data analysts and machine learning in the ""gold"" layer
+
+**What I'm confused on**  
+From what I've gathered the benefits are, it ""centralises"" all your data, because ML and BI can both use the ""gold"" layer. But I'm not seeing how the gold layer is different to a data warehouse, it sounds like things have been put in a schema during preparation... And if so, how is the structured data stored/accessed there?
+
+There's also images like [this one](https://www.databricks.com/wp-content/uploads/2020/01/data-lakehouse-new.png), by the same company who describes the ""bronze/silver/gold"" layers, but they condense them all into a single ""metadata"" layer in this image. Is the data actually duplicated between each layer, but some metadata tracks the data lineage? Or is all the data actually just stored in one place and each ""layer"" is just metadata making sense of everything in the data lake below?
+
+  
+I'm beginning to think I might be diving in a little too deep for a presentation for an entry-level role; it looks like there's still debate around how good a solution Datalakes even are... probably not a topic a beginner can bring any interesting discussion to other than ""well these are also a thing""!",6,6,JobeyobeyCodes,2024-11-14 22:39:39,https://www.reddit.com/r/dataengineering/comments/1grhe73/data_lakehouses_for_nondata_engineers/,0,False,False,False,False
+1grtejh,Bi-directional sync in MDM systems,"Our MDM system is growing and we start seeing syncup issues in some of our bi-directional connections. I'd like to read up a bit on best practices, architecture and design patterns specifically relating to identity management in (near) real time bi-directional connectivity (operational MDM basically).
+
+I suspect our problems have been solved before many times. I'm pretty new to enterprise architecture and I don't know where to start looking.
+
+Any insights, experience, links to posts or books would be very welcome.",6,7,dadadawe,2024-11-15 10:27:09,https://www.reddit.com/r/dataengineering/comments/1grtejh/bidirectional_sync_in_mdm_systems/,0,False,True,False,False
+1grrkgd,Help with Data engineering prep,"I am preparing for Data Engineering roles, i have some experience so far with sql and python but I wanted more clarity on what to focus on? What tools and technologies are most valued? And will i require expertise in ML and visualization tools? Any tips are much appreciated! Thank you",6,5,Hopeful-Injury4610,2024-11-15 08:06:00,https://www.reddit.com/r/dataengineering/comments/1grrkgd/help_with_data_engineering_prep/,1,False,False,False,False
+1gs31ls,Advice needed: BigQuery and Snowflake focus or explore Databricks?,"I’m starting a new job soon (IT Consulting), and the manager suggested that I should focus on BigQuery and Snowflake as they align better with upcoming projects.
+
+He also mentioned that Databricks might be tougher for me based on my background. Should I still consider investing time in learning Databricks, or would focusing on BigQuery and Snowflake be more beneficial for the future?
+
+Any advice?",4,9,forsaken_biscuit,2024-11-15 18:25:50,https://www.reddit.com/r/dataengineering/comments/1gs31ls/advice_needed_bigquery_and_snowflake_focus_or/,1,False,False,False,False
+1grut0y,Build a Real-Time Data Lake with Debezium and Apache Iceberg,"Tired of complex data pipelines? This post shows you how to build a simple, efficient data lake using Debezium and Apache Iceberg.
+
+Key benefits:
+
+* Real-time data ingestion
+* ACID compliance
+* Scalable storage with Apache Iceberg
+* No need for Kafka or Spark
+
+Check it out: [https://medium.com/@ismail-simsek/building-a-data-lake-with-debezium-and-apache-iceberg-part-1-25124daf2a95](https://medium.com/@ismail-simsek/building-a-data-lake-with-debezium-and-apache-iceberg-part-1-25124daf2a95)
+
+[https://github.com/memiiso/debezium-server-iceberg](https://github.com/memiiso/debezium-server-iceberg)
+
+\#dataengineering #datalake #apacheiceberg #debezium #realtimedata",5,2,gelyinegel,2024-11-15 12:02:03,https://www.reddit.com/r/dataengineering/comments/1grut0y/build_a_realtime_data_lake_with_debezium_and/,0,False,False,False,False
+1grsk99,Where to find hands on DE resources?,"I am working on refactoring a system which I feel does some frequently encountered flows across organisations. Collects raw event streams, grabs unique URLs, crawls, extracts, creates vectors, uses these outputs in some downstream analysis and objects.
+
+I have many different solutions which “work” but I am not sure which is optimal.
+
+I find both the internet and LLMs to be a very poor resource for this type of work.
+
+So where does one learn about how others have implemented such systems? Happy to reads books, blogs, repos!",3,3,ydennisy,2024-11-15 09:21:38,https://www.reddit.com/r/dataengineering/comments/1grsk99/where_to_find_hands_on_de_resources/,0,False,False,False,False
+1grn888,Fraud BI internship Questions,"Hello,
+
+I do not mean to sound unappreciative, but I recently got an internship offer 12 hours away from home, as a Fraud BI analyst at a F500 bank. 
+
+I am transitioning from studying CIS to now CS and hopefully Stats double major. I hope to pursue potentially CS masters or Stats masters with the ultimate goal of pursuing industry as a DE or something data related(technical, not business side).
+
+As I have so little technical, professional and formal(education) experience, I am not sure whether I use this summer towards working on projects and improving technical skill, or whether I move and do something I am not sure fits my future goals.
+
+I understand many modern DE's were previously BI analysts and that DE is often times not an entry level role to begin with. My primary question is whether this seems like a good move to pursue? I had a previous internship as an analyst, and I really would like to land actual technical roles and more engineering/SWE roles to build programming acumen.
+
+  
+Any help, guidance, general advice is very much appreciated. Have a great rest of your day!",3,6,GwHeezE,2024-11-15 03:29:25,https://www.reddit.com/r/dataengineering/comments/1grn888/fraud_bi_internship_questions/,0,False,False,False,False
+1grj38w,Certificates to take other than cloud,"I’m getting into my second year working as a data engineer and I want to start a course that isn’t purely focused on a cloud provider. I don’t want to commit to a large course such as the professional certificate. Are there any other courses that others could recommend?
+
+I’m really interested in the data bricks data engineer associate 
+
+",3,2,Due_Statistician2604,2024-11-14 23:58:17,https://www.reddit.com/r/dataengineering/comments/1grj38w/certificates_to_take_other_than_cloud/,0,False,False,False,False
+1grzlrf,Where is your data primarily located?,"Where is the bulk of your analytical data stored? Curious what are the popular choices for data storage these days? You probably have data in multiple places, so use comments for more nuanced answers.
+
+[View Poll](https://www.reddit.com/poll/1grzlrf)",2,3,AMDataLake,2024-11-15 16:01:10,https://www.reddit.com/r/dataengineering/comments/1grzlrf/where_is_your_data_primarily_located/,1,False,False,False,False
+1gry2ta,The Future of Data Engineering with LLMs Podcast,"Yesterday, I did a podcast with my cofounder of TrustGraph to discuss the state of data engineering with LLMs and the challenges LLM based architectures present. Mark is truly an expert in knowledge graphs, and I pocked and prodded him to share wealth of insights into why knowledge graphs are an ideal pairing with LLMs and more importantly, how knowledge graphs work. 
+
+[https://youtu.be/GyyRPRf0UFQ](https://youtu.be/GyyRPRf0UFQ)
+
+Here's some of the topics we discussed:  
+  
+\- Are Knowledge Graph's more popular in Europe?  
+\- Past data engineering lessons learned  
+\- Knowledge Graphs aren't new  
+\- Knowledge Graph types and do they matter?  
+\- The case for and against Knowledge Graph ontologies  
+\- The basics of Knowledge Graph queries  
+\- Knowledge about Knowledge Graphs is tribal  
+\- Why are Knowledge Graphs all of a sudden relevant with AI?  
+\- Some LLMs understand Knowledge Graphs better than others  
+\- What is scalable and reliable infrastructure?  
+\- What does ""production grade"" mean?  
+\- What is Pub/Sub?  
+\- Agentic architectures  
+\- Autonomous system operation and reliability  
+\- Simplifying complexity  
+\- A new paradigm for system control flow  
+\- Agentic systems are ""black boxes"" to the user  
+\- Explainability in agentic systems  
+\- The human relationship with agentic systems  
+\- What does cybersecurity look like for an agentic system?  
+\- Prompt injection is the new SQL injection  
+\- Explainability and cybersecurity detection  
+\- Systems engineering for agentic architectures is just beginning ",2,1,TrustGraph,2024-11-15 14:52:51,https://www.reddit.com/r/dataengineering/comments/1gry2ta/the_future_of_data_engineering_with_llms_podcast/,0,False,False,False,False
+1grgrqu,Power BI with Trino OIDC help,"were using this connector: https://github.com/CreativeDataEU/PowerBITrinoConnector
+
+trying to configure it to use the Aad authentication so that we don't have to give out client secrets to all of our users, however we are getting authentication errors.
+
+I know my user has all the permissions because I can hit trino using both the JDBC driver and the Trino CLI.
+
+all we get for clues is PowerBi saying ""We couldn't authenticate with the credentials provided. Pleas Try again."" and a log on trino saying ""http-worker-162	io.trino.server.security.oauth2.NimbusAirliftHttpClient	Received bad response from userinfo endpoint: null""
+
+any guidance would be much appreciated.",2,0,lambchopmsc,2024-11-14 22:11:29,https://www.reddit.com/r/dataengineering/comments/1grgrqu/power_bi_with_trino_oidc_help/,0,False,False,False,False
+1grfj3r,psycopg2 LogicalReplicationConnection,"Hello guys. I'm seeking some advice here.
+
+I've been working on emiting certain events based on certain changes on a AWS aurora compatible with PostgreSQL instance. I've set up a logical replication slot with wal2json and created a small service running in ECS that uses the psycopg2 LogicalReplicationConnection extra to read messages from the replication slot.
+
+My problem is that sometimes the transactions can be really big and the postprocessing takes a while. By the time I try to \`msg.cursor.send\_feedback\` the connection is closed. I've tried reconnection, sending feedback periodically without an lsn and nothing seems to work.  
+Any advice?  
+\`\`\`
+
+`def handle_message(msg):`  
+`# some really long process`  
+`msg.cursor.send_feedback(flush_lsn=msg.data_start, force=True)`
+
+`def run():`  
+`msg = self.cursor.read_message()`
+
+   `if msg:`
+
+`self.handle_message(msg)`
+
+   `if self.conn.closed:`
+
+`self.stop_replication()`
+
+`self.init_replication()`
+
+   `time.sleep(1)`
+
+\`\`\`",2,0,Plus_Sheepherder6926,2024-11-14 21:17:22,https://www.reddit.com/r/dataengineering/comments/1grfj3r/psycopg2_logicalreplicationconnection/,0,False,False,False,False
+1gs5keq,Reverse Engineering Source Systems,"Hey all,
+
+I recently put together a handful of tutorials on LinkedIn demonstrating how to reverse engineer a source system.
+
+The motivation for me to share was a project I was on where I was basically asked to integrate an entire SQL Server instance into a data warehouse project without any documentation - no data dictionary, no ERD diagram, nothing. 
+
+It wasn't a massive system - all of maybe 30 tables, each with maybe up to 50 columns - record counts in tens of millions or less.
+
+That being said, it's still a ton of work to figure out what you're working with in a situation like this, so I came up with a few approaches to quickly make sense of a new source system, and I've documented those approaches in these tutorials.
+
+All you need to work through them is access to Snowflake, as they're based on sample data already available (and you can easily setup a free trial account on Snowflake).
+
+The third post is, in my opinion, the most interesting and most useful - but certainly some value in the first two posts as well.
+
+Appreciate any and all feedback! Also still trying to figure out when/where I should be posting on LinkedIn, Reddit, elsewhere - in case any content creators have strong opinions, would love to hear 'em. 
+
+Thanks!
+
+https://www.linkedin.com/pulse/reverse-engineering-source-system-data-model-1-of5-jody-hesch-ja0bc
+
+https://www.linkedin.com/pulse/reverse-engineering-source-system-data-model-2-of5-jody-hesch-ja0bc
+
+https://www.linkedin.com/pulse/reverse-engineering-source-system-data-model-3-of5-jody-hesch-ja0bc",1,1,jodyhesch,2024-11-15 20:15:03,https://www.reddit.com/r/dataengineering/comments/1gs5keq/reverse_engineering_source_systems/,1,False,False,False,False
+1gs5hkt,Data integrity check between OLTP database and Data Warehouse,"In our project, we are syncing data to BigQuery from several OLTP databases like Mongo and PostgreSQL. Preserving data integrity is critical, since we use BigQuery for mission-critical calculations. The overall dataset is in 10's of TBs, so can't quite compare row-by-row. What tools or solutions should we consider for this task?
+
+Putting everything in one single PostgreSQL is not on the table.",1,0,mr_pants99,2024-11-15 20:11:25,https://www.reddit.com/r/dataengineering/comments/1gs5hkt/data_integrity_check_between_oltp_database_and/,1,False,False,False,False
+1gs4w7r,Python?,"Hey guys!
+
+I’m a sales rep at a national VAR.
+
+Most of you data engineers would never expect my company has the skills to help you deploy your data pipelines in Azure/AWS/GPC…So, I’m making a point to pass the big data engineering and machine learning certs those vendors offer.
+
+It’s the closest I can get to spending a day on the life of your shoes. Ideally, this empowers me to better consult with CTOs and Data Strategy VPs, and then actually support you Data Engineers with whatever swanky idea the suits come up with.
+
+On top of the hyperscaler certs, I also want to get some fundamental coding skills under my belt so I have an understanding of what scripting your tasks looks like.
+
+If I seen t through those “learn powershell in 30 lunches” series of books or their equivalents with Python - would that do the job?
+
+Thanks!
+
+PS: Not all of us sales reps are grunts solely chasing invoices. Some of us actually want to understand technical details so we can be useful long term partners. (That makes us all more money anyways 😎)",1,4,Equivalent_Hawk_1266,2024-11-15 19:45:22,https://www.reddit.com/r/dataengineering/comments/1gs4w7r/python/,0,False,False,False,False
+1gs1sgx,Avoid Costly Data Migrations: 10 Factors for Choosing the Right Partner,"Most data migrations are complex and high-stakes. While it may not be an everyday task, as a data engineer, it’s important to be aware of the potential risks and rewards. We’ve seen firsthand how choosing the right partner can lead to smooth success, while the wrong choice can result in data loss, hidden costs, compliance failures, and overall headaches.
+
+Based on our experience, we’ve put together a list of the 10 most crucial factors to consider when selecting a data migration partner: 🔗 [Full List Here](https://datacoves.com/post/data-migration-plan)
+
+A couple of examples:
+
+* **Proven Track Record:** Do they have case studies and references that show consistent results?
+* **Deep Technical Expertise:** Data migration is more than moving data—it’s about transforming processes to unlock potential.
+
+What factors do you consider essential in a data migration partner? Check out our full list, and let’s hear your thoughts!",1,0,Data-Queen-Mayra,2024-11-15 17:33:29,https://www.reddit.com/r/dataengineering/comments/1gs1sgx/avoid_costly_data_migrations_10_factors_for/,1,False,True,False,False
+1gs1oy5,Data Engineering careers in USAJobs? ,"I've been on the usajobs website, and in the r/usajobs sub reddit and there doesn't seem to be much in the way of data engineering. I think there's data science positions on the site, and mentions of data analysts within the reddit. 
+
+My question is are there any data engineers/data architects in here that have successfully gotten a job within the usajobs platform? Or work for the gov in general? Anything I should know? Tips, tricks, etc? ",1,1,claytonjr,2024-11-15 17:29:23,https://www.reddit.com/r/dataengineering/comments/1gs1oy5/data_engineering_careers_in_usajobs/,1,False,False,False,False
+1gs0zgv,AWS DMS question ,"We had AWS DMS running for over 2 years. No issues until yesterday. One of our teams changed a table name and AWS DMS failed. We had no issues adding new tables or adding/changing columns in a table. I'm on a phone so don't have the details of the error but it was something  about DDL, the fix performed by our devops was to rebuild the table with the old name. This is seems like not a right approach. Why DMS cares if table name has changed?",1,2,MrGreenPL,2024-11-15 17:00:02,https://www.reddit.com/r/dataengineering/comments/1gs0zgv/aws_dms_question/,1,False,False,False,False
+1gs0v8w,What can I bring from my last job if i want to become a data engineer,"I currently work with observability, I use Azure Monitor, Dynatrace and Grafana. In my work I do data observability, infrastructure and real-time UX. I'm studying to become a data engineer, but I don't know what I could bring from my current job to a possible opportunity as a DE. Some of my current tools might be useful in a Data Engineering enviroment?",1,0,CientistaSaxofonista,2024-11-15 16:54:53,https://www.reddit.com/r/dataengineering/comments/1gs0v8w/what_can_i_bring_from_my_last_job_if_i_want_to/,0,False,False,False,False
+1grwt2t,"A cross-platform data migration tool, leveraging my experience in migrating the Qlik Data Suite from on-premises to the public cloud","A cross-platform data migration tool, leveraging my experience in migrating the Qlik Data Suite from on-premises to the public cloud. I would like to share insights into the main functionalities of the [Qlik Data Suite](https://www.linkedin.com/pulse/qliks-data-integration-replication-suite-mohamed-rasvi-1pd2f/?trackingId=SWG8HG1QScCrT0NW0uzYjw%3D%3D) and its architecture, explaining why it is an ideal choice for large-scale data migration, particularly in the finance and fintech sectors.
+
+[https://www.linkedin.com/pulse/qliks-data-integration-replication-suite-mohamed-rasvi-1pd2f/?trackingId=SWG8HG1QScCrT0NW0uzYjw%3D%3D](https://www.linkedin.com/pulse/qliks-data-integration-replication-suite-mohamed-rasvi-1pd2f/?trackingId=SWG8HG1QScCrT0NW0uzYjw%3D%3D)",1,2,rasvi786,2024-11-15 13:51:30,https://www.reddit.com/r/dataengineering/comments/1grwt2t/a_crossplatform_data_migration_tool_leveraging_my/,0,False,False,False,False
+1grt9ve,Running Erwin on a MacBook,"I'm learning to use Erwin Data Modeller and am running it on an M1 Mac using Parallels Desktop running Windows11.
+
+When installing it I got ODBC 193 errors for its drivers.
+I don't think this is an Erwin problem, more of an emulator/ODBC problem.
+
+Has anyone come across this problem and got a solution for it?",1,1,LargeSale8354,2024-11-15 10:17:16,https://www.reddit.com/r/dataengineering/comments/1grt9ve/running_erwin_on_a_macbook/,0,False,False,False,False
+1griypi,where they get data?,"hi, i see often sites like this [https://www.peopledatalabs.com/company-data](https://www.peopledatalabs.com/company-data) which offer some very interesting data which do not exist anywhere on the Internet, i curious from where they get this data? from government? how?",1,3,eli855,2024-11-14 23:52:11,https://www.reddit.com/r/dataengineering/comments/1griypi/where_they_get_data/,0,False,False,False,False
+1grgcvh,How to prepare for Data Engineering Int coming from a Software Engineering background?,"What questions are generally asked, and how to best prepare with resources? ",1,1,lesgo_penguin,2024-11-14 21:53:30,https://www.reddit.com/r/dataengineering/comments/1grgcvh/how_to_prepare_for_data_engineering_int_coming/,0,False,False,False,False
+1grg5s1,Live Coding Sess,Hey all just [wrote about my live coding session](https://silverboi.me/blog) with one of LatAm's leading fintechs. If you want to know more about it feel free to DM me!,1,0,Feisty_Ice_4840,2024-11-14 21:44:54,https://www.reddit.com/r/dataengineering/comments/1grg5s1/live_coding_sess/,0,False,False,False,False
+1gs0q5a,How Allegro Reduced the Cost of Running a GCP Dataflow Pipeline by 60%,,0,0,rgancarz,2024-11-15 16:48:49,https://www.infoq.com/news/2024/11/allegro-dataflow-cost-savings/,0,False,False,False,False
+1grynb7,Wrote a new Article - Data extraction from Craigslist,[https://medium.com/@rajsigh717/fun-data-extraction-from-craigslist-6024f343bb62](https://medium.com/@rajsigh717/fun-data-extraction-from-craigslist-6024f343bb62),0,0,Goodragonfruit,2024-11-15 15:18:52,https://www.reddit.com/r/dataengineering/comments/1grynb7/wrote_a_new_article_data_extraction_from/,0,False,False,False,False
